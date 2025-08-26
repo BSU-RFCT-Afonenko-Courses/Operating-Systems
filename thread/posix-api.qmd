@@ -1,0 +1,6 @@
+# API потоков POSIX
+
+## Создание
+
+wait, join
+cancelation

@@ -1,0 +1,83 @@
+project:
+  type: book
+  output-dir: _full-book
+
+book:
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - utilities/application.qmd
+    - part: kernel/overview.qmd
+
+      chapters:
+        - kernel/syscall.qmd
+        - kernel/modules.qmd
+
+    - part: initialization/overview.qmd
+      chapters:
+        - initialization/grub.qmd
+        - initialization/systemd.qmd
+
+    - part: concurrency/overview.qmd
+      chapters:
+        - concurrency/alghorithm.qmd
+        - concurrency/primitives.qmd
+        - concurrency/data-structures.qmd
+
+    - part: process/overview.qmd
+      chapters:
+        - process/linux-api.qmd
+        - process/communication.qmd
+        - process/scheduling.qmd
+        - process/utilization.qmd
+
+    - part: thread/overview.qmd
+      chapters:
+        - thread/posix-api.qmd
+
+    - part: virtual-memory/overview.qmd
+      chapters:
+        - virtual-memory/distribution.qmd
+        - virtual-memory/replacement.qmd
+        - virtual-memory/program.qmd
+
+    - part: filesystem/overview.qmd
+      chapters: 
+        - filesystem/fat.qmd
+
+    - part: security/overview.qmd
+
+    - part: "Лабораторные. Администрирование"
+      chapters:
+        - lab/administrating/introduction.qmd
+        - lab/administrating/shell.qmd
+        - lab/administrating/process.qmd
+
+    - part: "Лабораторные. Программирование"
+      chapters:
+        - lab/programming/introduction.qmd
+        - lab/programming/process.qmd
+        - lab/programming/interprocess-communication.qmd
+        - lab/programming/thread.qmd
+        - lab/programming/memory.qmd
+        - lab/programming/filesystem.qmd
+        - lab/programming/package.qmd
+
+    - part: "Лабораторные. Исследование"
+      chapters:
+        - lab/researching/process-scheduling/main.qmd
+        - lab/researching/thread/main.qmd
+        - lab/researching/memory/distribution/main.qmd
+        - lab/researching/memory/replacement/main.qmd
+        - lab/researching/filesystem/main.qmd
+
+    - references.qmd
+
+  appendices:
+    - utilities/bash.qmd
+    - utilities/gcc.qmd
+    - utilities/make.qmd
+    - utilities/apt.qmd
+    - utilities/grep.qmd
+    - utilities/other.qmd
+

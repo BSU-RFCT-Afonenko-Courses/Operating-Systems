@@ -1,0 +1,14 @@
+# Процессы в Linux
+
+getpid, getppid, exit, wait, waitpid, waitid
+
+сироты, зомби, SIGCHD
+
+
+## `fork`
+
+## `exec*`
+
+## Приоритет планирования (nice)
+
+## Интрефейс планировщика (sheduler)

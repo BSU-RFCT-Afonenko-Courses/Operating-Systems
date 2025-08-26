@@ -1,0 +1,17 @@
+project:
+  type: book
+
+book:
+  title: "Operating-Systems"
+  author: "Афоненко Анатолий"
+  date: today
+
+profile:
+  group:
+    - [full,student]
+    - [dev,prod]
+    - [html,pdf]
+
+lang: ru
+bibliography: references.bib
+engine: knitr

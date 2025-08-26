@@ -1,0 +1,4 @@
+# Мониторинг процессов
+
+ps, trace, sttrace, ptrace
+
